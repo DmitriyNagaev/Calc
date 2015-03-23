@@ -33,7 +33,7 @@ thirdLine{
 }
 .demo {
 	padding-left: 16px;
-	padding-right: 16px;
+	padding-right: 15.5px;
 }
 .third{
 	padding-left: 9px;
@@ -64,6 +64,10 @@ input{
 #equal{
 	margin-left: auto;
     margin-right: auto;
-    padding-left:75px;
-    padding-right: 75px;
+    padding-left:35px;
+    padding-right: 36px;
+}
+#ce{
+	 padding-left:14px;
+    padding-right: 13px;
 }
