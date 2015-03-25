@@ -1,22 +1,32 @@
 div{
 	display: block;
 	}
-#calc{background-color: rgb(10, 150, 190);
+#calc{background-color: rgb(204, 255, 255);
 	margin-right: auto ;
 	margin-left: auto ;
-	border: 3px solid black; 
-	width: 155px;
 	margin-top: 200px;
+	border: 5px solid rgb(128, 145, 158); 
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 200px;
+	height: 205px;
+	
+}
+p{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-align: center;
 }
 input{
-	background-color: rgb(100, 150, 255);
+	background-color: #D1F0FF;
 	color: rgb(0, 0, 170);
 	
 }
 #result{
 	width: 100%;
-	margin-top: 10px;
+	margin-top: 3px;
 	border: none;
+	background-color: #D6FFD6;
 
 }
 #information{
@@ -24,40 +34,19 @@ input{
 	margin-top: -0.5em;
 	border: none;
 	margin-bottom: 10px;
+	background-color: #D6FFD6;
 }
-
-#plus{
-	padding-left: 10px;
-	padding-right: 10px;
+.button{
+	width: 35px;
+	height:28px;
+	margin-top: 3px;
 }
-
-#minus{
-	padding-left: 13px;
-	padding-right: 13px;
+.line{
+	margin-left: 4px;
+	
 }
-#multiply{
-	padding-left: 11px;
-	padding-right: 11.5px;
+.equal{
+	width: 74px;
+	height:28px;
 }
-#divide{
-	padding-left: 13px;
-	padding-right: 13.5px;
-}
-#memory{
-	padding-left: 5px;
-	padding-right: 4px;
-}
-#squareRoot{
-	padding-left: 3px;
-	padding-right: 3px;
-}
-#ce{
-	padding-left: 14px;
-	padding-right: 14.5px;
-}
-#equal{
-	padding-left: 29px;
-	padding-right: 29.5px;
-}
-
 

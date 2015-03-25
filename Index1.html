@@ -4,10 +4,6 @@
 	<meta charset= utf-8 >
 	<script src="/Repositories/Calc/JS1.js"> </script>
 	<link rel="stylesheet" href="/Repositories/Calc/CSS1.css">
-	<!-- Путь к скрипту ведет в никуда, точно так же как и путь к стилю. Ты видел такую папку внутри репозитория? Я нет.  -->
-	<!-- Файлы копировал из другой папки потому выше попандос-->
-
-	<!-- Когда ты начнешь писать правильно слова? Пару таких ошибок в резюме и тебя на работу никто не возьмет!!! -->
 	<title> Sublime1_use_Java_Script</title>
 	
 </head>
@@ -15,44 +11,48 @@
 
 <body>
 <div id="calc">
+	<p> Калькулятор </p>
 	<div><input id="result" type="text"></div>
 	<div><input id="information"type="text"></div>
 	
-	<!-- Где ты видел такой тег? Дима, в html5 есть набор тегов, которыми нужно пользоваться, а изобретают новые разработчики стандарта! -->
+	
 
 
-	<div>
-		<input type="button" onclick="" value="7">
-		<input type="button" onclick="" value="8">
-		<input type="button" onclick="" value="9">
-		<input id="plus" type="button" onclick="" value="+">
-		<input id="minus" type="button" onclick="" value="-">
+	<div class="line">
+		<input class="button" type="button" onclick="" value="7">
+		<input class="button" type="button" onclick="" value="8">
+		<input class="button" type="button" onclick="" value="9">
+		<input class="button" type="button" onclick="" value="M+">
+		<input class="button" type="button" onclick="" value="CE">
+		
 	</div>
 		
 	
 	
-	<div>
-		<input type="button" onclick="" value="4">
-		<input type="button" onclick="" value="5">
-		<input type="button" onclick="" value="6">
-		<input id="multiply" type="button" onclick="" value="*">
-		<input id="divide" type="button" onclick="" value="/">
+	<div class="line">
+		<input class="button" type="button" onclick="" value="4">
+		<input class="button" type="button" onclick="" value="5">
+		<input class="button" type="button" onclick="" value="6">
+		<input class="button" type="button" onclick="" value="-">
+		<input class="button" type="button" onclick="" value="+">
 	</div>
 		
 
-	<div>
-		<input type="button" onclick="" value="1">
-		<input type="button" onclick="" value="2">
-		<input type="button" onclick="" value="3">
-		<input id="memory" type="button" onclick="" value="M+">
-		<input id="squareRoot" type="button" onclick="" value="Sqrt">
+	<div class="line">
+		<input class="button" type="button" onclick="" value="1">
+		<input class="button" type="button" onclick="" value="2">
+		<input class="button" type="button" onclick="" value="3">
+		<input class="button" type="button" onclick="" value="*">
+		<input class="button" type="button" onclick="" value="/">
 	</div>
 		
 
-	<div>
-		<input id="zero" type="button" onclick="" value="0">
-		<input id="ce"  type="button" onclick="" value="CE">
-		<input id="equal"  type="button" onclick="" value="=">
+	<div class="line">
+		<input class="button" type="button" onclick="" value="0">
+		<input class="button" type="button" onclick="" value=",">
+		<input class="button" type="button" onclick=""value="Sqrt">
+		<input class="equal" type="button" onclick="" value="=">
+		
 	</div>
 	
 	
