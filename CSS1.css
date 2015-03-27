@@ -1,6 +1,3 @@
-div{
-	display: block;
-	}
 #calc{background-color: rgb(204, 255, 255);
 	margin-right: auto ;
 	margin-left: auto ;
@@ -12,7 +9,7 @@ div{
 	height: 205px;
 	
 }
-p{
+.head{
 	margin-top: 2px;
 	margin-bottom: 2px;
 	text-align: center;
@@ -22,19 +19,20 @@ input{
 	color: rgb(0, 0, 170);
 	
 }
-#result{
+#result, #information {
 	width: 100%;
-	margin-top: 3px;
 	border: none;
 	background-color: #D6FFD6;
 
 }
+
+#result{
+	margin-top: 3px;
+}
 #information{
-	width: 100%;
 	margin-top: -0.5em;
-	border: none;
 	margin-bottom: 10px;
-	background-color: #D6FFD6;
+	
 }
 .button{
 	width: 35px;
