@@ -2,7 +2,11 @@
 <html>
 <head>
 	<meta charset= utf-8 >
-	<script src="JS1.js"> </script>
+	<!--<script src="JS1.js"> </script> //мой JS--> 
+	<!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script> //ссылка на библиотеку-->
+	<script src = Library_JQ.js ></script>
+	<!--<script src="JS_JQ.js"> </script> // не доработано с использованием строки eval -->
+	<script src = otherLogic_JQ.js> </script> <!--скрипт к калькулятору-->
 	<link rel="stylesheet" href="CSS1.css" >
 	<title> Sublime1_use_Java_Script</title>
 	
@@ -12,45 +16,44 @@
 <body>
 <div id="calc">
 	<p class= "head"> Калькулятор </p>
-	<div><input id="result" type="text"></div>
-	<div><input id="information"type="text"></div>
-	
-	
+	<div><input id="ourMathematics" type="text"></div>
+	<div><input id="result"type="text"></div>
 
 
 	<div class="line">
-		<input class="button" type="button" onclick="" value="7">
-		<input class="button" type="button" onclick="" value="8">
-		<input class="button" type="button" onclick="" value="9">
-		<input class="button" type="button" onclick="" value="M+">
-		<input class="button" type="button" onclick="" value="CE">
+		<input class="number" type="button" onclick="" value="7">
+		<input class="number" type="button" onclick="" value="8">
+		<input class="number" type="button" onclick="" value="9">
+		<input class="operation" type="button" onclick="" value="+">
+		<input class="CE" type="button" onclick="" value="CE">
 		
 	</div>
 		
 	
 	
 	<div class="line">
-		<input class="button" type="button" onclick="" value="4">
-		<input class="button" type="button" onclick="" value="5">
-		<input class="button" type="button" onclick="" value="6">
-		<input class="button" type="button" onclick="" value="-">
-		<input class="button" type="button" onclick="" value="+">
+		<input class="number" type="button" onclick="" value="4">
+		<input class="number" type="button" onclick="" value="5">
+		<input class="number" type="button" onclick="" value="6">
+		<input class="operation" type="button" onclick="" value="-">
+		<input class="memoryAdd" type="button" onclick="" value="M+">
 	</div>
 		
 
 	<div class="line">
-		<input class="button" type="button" onclick="" value="1">
-		<input class="button" type="button" onclick="" value="2">
-		<input class="button" type="button" onclick="" value="3">
-		<input class="button" type="button" onclick="" value="*">
-		<input class="button" type="button" onclick="" value="/">
+		<input class="number" type="button" onclick="" value="1">
+		<input class="number" type="button" onclick="" value="2">
+		<input class="number" type="button" onclick="" value="3">
+		<input class="operation" type="button" onclick="" value="*">
+		<input class="memory-" type="button" onclick="" value="M-">
 	</div>
 		
 
 	<div class="line">
-		<input class="button" type="button" onclick="" value="0">
-		<input class="button" type="button" onclick="" value=",">
-		<input class="button" type="button" onclick=""value="Sqrt">
+		<input class="number" type="button" onclick="" value="0">
+		<input class="number" type="button" onclick="" value=".">
+		<input class="sqrt" type="button" onclick=""value="Sqrt">
+		<input class="operation" type="button" onclick="" value="/">
 		<input class="equal" type="button" onclick="" value="=">
 		
 	</div>
