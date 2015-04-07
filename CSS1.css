@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-/*DIV и так всегда block - этот стиль бесполезен. Поищи информацию о том какой display у разных тегов по умолчанию - это важно знать*/
-div{
-	display: block;
-	}
->>>>>>> origin/master
 #calc{background-color: rgb(204, 255, 255);
 	margin-right: auto ;
 	margin-left: auto ;
@@ -17,13 +10,7 @@ div{
 	border-radius: 10px;
 	
 }
-<<<<<<< HEAD
 .head{
-=======
-/*Постарайся не задавать стили для тегов напрямую, только если ты не абсолютно уверен, что во всей программе они будут такими.
-Пользуйся классами и айди.*/
-p{
->>>>>>> origin/master
 	margin-top: 2px;
 	margin-bottom: 2px;
 	text-align: center;
@@ -32,19 +19,8 @@ input{
 	background-color: #D1F0FF;
 	color: rgb(0, 0, 170);
 }
-<<<<<<< HEAD
 
 #result, #ourMathematics {
-=======
-/*Совпадающие стили можно выносить в группы, перечисляя селекторы через запятую
-#result, #information {
-	width: 100%
-	...
-}
-*/
-
-#result{
->>>>>>> origin/master
 	width: 100%;
 	border: none;
 	background-color: #D6FFD6;
