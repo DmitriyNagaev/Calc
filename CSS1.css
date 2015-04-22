@@ -1,55 +1,72 @@
-#calc{background-color: rgb(204, 255, 255);
+#calc{background-color: rgb(25, 25, 25);
 	margin-right: auto ;
 	margin-left: auto ;
 	margin-top: 200px;
-	border: 5px solid rgb(128, 145, 158); 
+	border: 5px solid rgb(0, 0, 0); 
 	padding-left: 5px;
 	padding-right: 5px;
 	width: 200px;
 	height: 215px;
 	border-radius: 10px;
+	color: rgb(112, 77, 77);
+
 	
 }
+
+input:focus {  
+    outline:none;
+} 
 .head{
 	margin-top: 2px;
 	margin-bottom: 2px;
 	text-align: center;
 }
-input{
-	background-color: #D1F0FF;
-	color: rgb(0, 0, 170);
-}
+
 
 #result, #ourMathematics {
 	width: 100%;
 	border: none;
-	background-color: #D6FFD6;
+	background-color: rgb(25, 25, 25);
 	text-align: right;
-	color: black;
+	color: white;
+	font-family: times;
+	cursor: none;
 
 }
-#showNumber{
+#showNumber,#ourMathematics{
 	margin-top: 3px;
 }
-#ourMathematics{
-	margin-top: 3px;
 
-}
 #result{
-	
 	margin-bottom: 10px;
 	height: 30px;
 	font-size: 18px;
 	
 }
-.number, .operation, .CE, .memoryAdd, .memory-, .equal, .sqrt{
+.number{
+	background-color: rgb(40, 40, 39);
+}
+
+.operation, .CE, .memoryAdd, .memory-, .equal, .sqrt{
+	background-color: rgb(52, 52, 51);
+	
+}
+.number, .point, .zero, .operation, .CE, .memoryAdd, .memory-, .equal, .sqrt{
 	width: 35px;
 	height:28px;
 	margin-top: 3px;
+	color: rgb(255, 255, 255);
+	border: none;
 }
 .line{
 	margin-left: 4px;
 	
 }
+
+/* Style for JQ */
+.click{
+    background-color: rgb(77, 77, 184);
+}
+
 
 
