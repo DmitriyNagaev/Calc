@@ -1,0 +1,282 @@
+/* $(document).ready(function() { // создать модуль старт калькулятор нажал кнопку = анимация = появился калькулятор (1)
+  ++ var carrentValue = null; /// все модуле а модуль возвращает только старт калькулятор (1)
+   // для документ реди вещаю обработчик кнопки старт (1)
+   // появлятся кальк (1)
+ ++  var firstNumber = null;
+ ++  var operation = null;
+  ++ var secondNumber = null;
+ ++  var memory = null;
+ ++ var ourNumber = "";
+
+    // $("#ourMathematics").val() убрать и сохранить в переменную (3)
+    // локал сторедж (база данных), сделать историю расчетов сделать в калькуляторе стрелка и выезжает история (после 1)
+    // создать событие с данными результата  - историей (после 1)
+
+    +++ function checkAndPprepareLinesForNextIteration() { //проверяет была ли до этого какая либо операция перейменовать (3) +++
+
+        var ourMathematicsLine = $("#ourMathematics").val();
+        var arror = $("#result").val();
+            if(ourMathematicsLine[ourMathematicsLine.length-2] === "="||arror[arror.length-1]==="т") {
+              cleanResult();
+              cleanOurMathematics();
+            }
+            return false;
+          }
+
+   +++ function gatherNumber() {// перейменовать
+      checkAndPprepareLinesForNextIteration();
+      if(operation==="Sqrt") {
+        cleanResult();
+      } else {
+        ourNumber = $("#result").val()+$(this).val();
+        checkNumber();
+
+      }
+    }
+*/
+  /*  +++ function chooseOperation() { //выбирает операцию и отобажает ее  перейменовать (3)
+      if (firstNumber === null && $("#result").val()!==""){
+       rememberFirstNumber();
+                operation = $(this).val();//
+                putOurMath();
+                cleanResult();
+              } else if( firstNumber !== null && $("#result").val()===""){
+                operation = $(this).val();//
+                putOurMath();
+              }
+            };
+
+    function quadraticRoot() { // отдельна операция по квадратному корню
+      operation = "Sqrt";
+      if ($("#ourMathematics").val()!==""||$("#result").val()!==""){
+       if ($("#ourMathematics").val()!==""&&$("#result").val()===""){
+         var string = $("#ourMathematics").val();
+         if(string[0]==="s") {
+          putLineForSqrt();
+        } else {
+          string =string.slice(0, string.length-2);
+          firstNumber = +string;
+          putLineForSqrt();
+          cleanResult();
+        }
+      } else {
+       rememberFirstNumber();
+       putLineForSqrt();
+       cleanResult();
+     };
+   };
+ };
+
+  +++  function getResult() { // делaяет вычисление с двумя числами // перейменовать (3)
+      secondNumber = $("#result").val(); /// в функцию (3)
+      if(operation==="Sqrt" || secondNumber!=="")
+        switch(operation) {
+         case "+":
+         carrentValue = +firstNumber + +secondNumber;
+         break;
+         case "-":
+         carrentValue = +firstNumber - +secondNumber;
+         break;
+         case "*":
+         carrentValue = +firstNumber * +secondNumber;
+         break;
+         case "/":
+         carrentValue = +firstNumber / +secondNumber;
+         break;
+         case "Sqrt":
+         carrentValue = Math.sqrt(+firstNumber);
+         secondNumber="";
+         break;
+       };
+     };
+
+  +++  function showResult() { // отображает результат в двох строках (3)
+      getResult();
+            if(carrentValue !==null) {  // не работате квадратны корент или 5- = (3)
+              if (carrentValue===Infinity){ // isFinit проверка (3)
+               $("#result").val("На ноль не делят");
+               cleanOurMathematics();
+               cleanAll();
+             } else if(isNaN(carrentValue)){
+               $("#result").val("Не верный аргумент");
+               cleanOurMathematics();
+               cleanAll();
+             } else {
+              $("#ourMathematics").val($("#ourMathematics").val()+" "+ secondNumber+ " " + "="+ " ");
+              $("#result").val(carrentValue);
+              cleanAll();
+            };
+          };
+        };
+
+     +++   function checkNumber() { /// перейменовать submit (3)++
+          if(ourNumber[0]==="0" && ourNumber[1]!=="."){
+            ourNumber = +ourNumber;
+          } else if(ourNumber[0]===".") {
+            ourNumber = "";
+          } else {
+            for(var i=0; i<ourNumber.length; i++) {
+
+              if(ourNumber[i]===".") {
+                var amountOfPoint = 0;
+                for(var i = 0; i<ourNumber.length; i++) {
+                  if(ourNumber[i]===".") {
+                    amountOfPoint++;
+                  };
+                };
+                if(amountOfPoint>1) {
+                  ourNumber = ourNumber.slice(0, -1)
+                };
+              };
+            };
+          };
+          $("#result").val(ourNumber);
+        }; */
+
+    /*+++ function rememberFirstNumber() {
+         firstNumber = $("#result").val();
+     };
+    //+++ function putOurMath() {
+      //   $("#ourMathematics").val(+firstNumber +" "+ operation);
+     };
+   +++ function rememberOperation() { // не везде работает
+      operation = $(this).val();
+    };
+    function putLineForSqrt() {
+      $("#ourMathematics").val("sqrt"+" "+"("+ +firstNumber +")");
+    }
+   +++ function cleanResult() { // oчистить
+      $("#result").val("");
+    };
+   +++ function recordMemory() {
+      memory = $("#result").val();
+    };
+    +++ function useMemory() {
+      $("#result").val(memory);
+    };
+  +++  function cleanAll() { // variable++
+      firstNumber = null;
+      secondNumber = null;
+      operation = null;
+      carrentValue = null;
+    };
+   +++ function cleanOurMathematics() {
+      $("#ourMathematics").val("");
+    };
+     /*++++ function doLogikForkeyboardNumber() {
+      if(firstNumber === null && $("#result").val()!=="") {
+        rememberFirstNumber();
+        cleanResult();
+        putOurMath();
+      } else if(firstNumber !== null && $("#result").val()===""){
+        putOurMath();
+      };
+    }; */
+
+   /* +++ $(".number").on("click", gatherNumber); // обернуть в функцию и в нутри старта
+   ++ $(".CE").on("click", cleanResult);
+    ++$(".CE").on("click", checkAndPprepareLinesForNextIteration);
+    +++ $(".operation").on("click", chooseOperation);
+   ++ $(".equal").on("click", showResult);
+    ++$(".sqrt").on("click", quadraticRoot);
+    ++$(".memoryAdd").on("click", recordMemory);
+   ++ $(".memory-").on("click", useMemory);
+
+/*+++ function focusKeyBoard(e) { /////////////////////////////////////
+  $("#result").focus();
+  if(e.keyCode == 13 || e.keyCode == 8 || e.keyCode == 144 || e.keyCode == 27) {
+    return true;
+  }
+  else if(e.keyCode < 97 || e.keyCode>105) {
+    return false;
+  };
+  checkAndPprepareLinesForNextIteration();
+};
++++ function useKeyBoard(e) {
+
+                if(e.keyCode > 95){ //  набор числа
+                  if(e.keyCode == 96) {
+                    ourNumber = $("#result").val()+"0"
+                  } else if(e.keyCode == 110){
+                    ourNumber = $("#result").val()+".";
+                  } else { ourNumber = $("#result").val()
+                };
+
+                checkNumber();
+                $("#result").val(ourNumber)
+              };
+
+              switch (e.keyCode) {
+                case 107:
+                operation = "+";
+                doLogikForkeyboardNumber();
+                break;
+                case 109:
+                operation = "-";
+                doLogikForkeyboardNumber();
+                break;
+                case 106:
+                operation = "*";
+                doLogikForkeyboardNumber();
+                break;
+                case 111:
+                operation = "/";
+                doLogikForkeyboardNumber();
+                break;
+                case 13:
+                showResult();
+                break;
+
+                case 27:
+                cleanResult();
+                checkAndPprepareLinesForNextIteration();
+                break;
+              };
+            };
+            $("body").on("keyup", useKeyBoard);
+            $("body").on("keydown", focusKeyBoard); */
+
+
+          /*
+
+
+ /* }) */
+ // ++++ работать надо со строкой а не заниматься ее преоброзованиеы
+// ++++ проверка на число isNaN && isFinite ... 00 (как есть)
+// ++++ клавиши создать 2 масива маси состоит из  объктов ключ значение [{key: 105, value: "0"}]
+// ++++ два масива один на число а второй на операцию
+//++++ "sqrt({0})".format(35) формат строк для джава скрипат функция
+// шрифт Google web fonts классны шрифт
+// ограничить цыфри 15
+// расплывающийся круг с центра
+// <div class=number></div>
+// <button>Petro poroshenko</button>
+// .number { width: 3rem; height: 3rem; background-color: black; margin: 2rem; border-radius: 100px;}
+
+ /* .number:hover { background-color: violet; }
+div::before {
+  position: absolute;
+  z-index: 200;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+} */
+
+// сет бокси 
+// запуск кейгена  внутри
+// установка програмы
+
+
+//// мои мысли : +++ и для клавы и для кнопак создать единый обработчик через ID и класc
+// +++надо вводить негатиные значения ++++++++++++++++++++(реализовано в submitNumber)
+// +++++в работе с оболочкой работаем с полем, а в работе с кнопками с значение надо это синхронизировать
+ // +++при стираниее через СЕ или ускейп надо стирать значение ourNumber +-
+ // +++настроить стираее через бескпейс, но надо стирать и переме ++++
+ // +++после ошибки нельзя делать вычисления
+ // ++++после получения результата должно отнимать, а не начинать писать число с-
+
+ // +++настроить работу корня должен брать с конца итерации значени
+ //++++ реализавать функцию формат для строк
+// ++++формат строк не работает для а = 0:
+ // +++ для строк ограничить ввод, если матиматика больче сделать в формате "<<458838+78=

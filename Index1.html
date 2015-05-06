@@ -1,14 +1,16 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset= utf-8 >
-	<!--<script src="JS1.js"> </script> //мой JS--> 
-	<!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script> //ссылка на библиотеку-->
+	 <script src="JS1.js"> </script>
+	<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
 	<script src = Library_JQ.js ></script>
-	<!--<script src="JS_JQ.js"> </script> // не доработано с использованием строки eval -->
-	<script src = otherLogic_JQ.js> </script> <!--скрипт к калькулятору-->
+	<!-- <script src="JS_JQ.js"> </script> -->
+	<script src = otherLogic_JQ.js> </script> 
 	<link rel="stylesheet" href="CSS1.css" >
 	<title> Sublime1_use_Java_Script</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 	
 </style>
 	
@@ -16,55 +18,56 @@
 
 
 <body>
-<div id="calc">
-	<p class= "head"> Калькулятор </p>
-	<div><input id="ourMathematics" type="text"></div>
-	<div><input id="result"type="text"></div>
+<input id="button" type="button" value="Use Calculator" >
+
+<div class="calc">
+	<p id = "head"> Super Calculator </p>
+	<div> <input id="ourMathematics" type="text" readonly> </div>
+	<div> <input id="lineForNumber" type="text" readonly> </div>
 
 
 	<div class="line">
-		<input class="number" type="button" onclick="" value="7">
-		<input class="number" type="button" onclick="" value="8">
-		<input class="number" type="button" onclick="" value="9">
-		<input class="operation" type="button" onclick="" value="+">
-		<input class="CE" type="button" onclick="" value="CE">
+		<input class="number" type="button"  value="7">
+		<input class="number" type="button"  value="8">
+		<input class="number" type="button"  value="9">
+		<input class="operation" id="plus" type="button" onclick="" value="+">
+		<input id="CE" type="button" onclick="" value="CE">
 		
 	</div>
 		
 	
 	
 	<div class="line">
-		<input class="number" type="button" onclick="" value="4">
-		<input class="number" type="button" onclick="" value="5">
-		<input class="number" type="button" onclick="" value="6">
-		<input class="operation" type="button" onclick="" value="-">
-		<input class="memoryAdd" type="button" onclick="" value="M+">
+		<input class="number" type="button"  value="4">
+		<input class="number" type="button"  value="5">
+		<input class="number" type="button"  value="6">
+		<input class="operation" id="minus" type="button" onclick="" value="-">
+		 <input id="memoryAdd" type="button" onclick="" value="M+">
+	</div>
+
+
+	<div class="line">
+		<input class="number" type="button"  value="1">
+		<input class="number" type="button"  value="2">
+		<input class="number" type="button"  value="3">
+		<input class="operation" id="multiply"type="button" onclick="" value="*">
+		<input id="memory-" type="button" onclick="" value="M-">
 	</div>
 		
 
 	<div class="line">
-		<input class="number" type="button" onclick="" value="1">
-		<input class="number" type="button" onclick="" value="2">
-		<input class="number" type="button" onclick="" value="3">
-		<input class="operation" type="button" onclick="" value="*">
-		<input class="memory-" type="button" onclick="" value="M-">
-	</div>
-		
-
-	<div class="line">
-		<input class="number" type="button" onclick="" value="0">
-		<input class="number" type="button" onclick="" value=".">
-		<input class="sqrt" type="button" onclick=""value="Sqrt">
-		<input class="operation" type="button" onclick="" value="/">
-		<input class="equal" type="button" onclick="" value="=">
+		<input class="number" type="button" value="0">
+		<input class="number" type="button" value=".">
+		<input id="sqrt" type="button" value="Sqrt">
+		<input class="operation" id="divide" type="button"  value="/">
+		<input  id="equal" type="button"  value ="=">
 		
 	</div>
 	
-	
-<div/>
 
-
+</div>
 
 </body>
 
 </html>
+

@@ -1,4 +1,9 @@
-var calculator = (function(){  
+
+
+
+
+
+ /* var calculator = (function(){
         var carrentValue = null;
 
         return {
@@ -141,5 +146,5 @@ var handler = (function(){
 
 })();
 
-handler.startHandler();
+handler.startHandler(); */
 

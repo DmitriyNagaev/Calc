@@ -1,72 +1,171 @@
-#calc{background-color: rgb(25, 25, 25);
+.calc{
+    visibility: hidden;
+	position: relative;
+
+}
+.calcAnimate{
+
+    visibility: visible;
+	position: relative;
+	background-color: rgb(25, 25, 25);
 	margin-right: auto ;
 	margin-left: auto ;
-	margin-top: 200px;
-	border: 5px solid rgb(0, 0, 0); 
+	margin-top: 100px;
+	border: 5px solid rgb(0, 0, 0);
 	padding-left: 5px;
 	padding-right: 5px;
-	width: 200px;
-	height: 215px;
+	width: 240px;
+	height: 368px;
 	border-radius: 10px;
-	color: rgb(112, 77, 77);
+	color: rgb(136, 136, 136);
 
-	
+	-webkit-transform: rotate(720deg); /* Safari */
+	transform: rotate(720deg);
+	-webkit-animation: show 6s;
+	animation: show 6s;
+    -webkit-transition: -webkit-transform 3s ease-out; /* Safari */
+	transition: transform 3s ease-out;
 }
+.buttonAnimate {
 
-input:focus {  
+	-webkit-transform: rotate(360deg); /* Safari */
+	transform: rotate(360deg);
+
+	-webkit-transition:  -webkit-transform 2s  ease-out ; /* Safari */
+	-webkit-transition-delay: 2.5s;
+	transition:  transform 2s ease-out;
+	transition-delay: 2.5s;
+}
+input:focus {
     outline:none;
-} 
-.head{
+}
+#head{
 	margin-top: 2px;
 	margin-bottom: 2px;
 	text-align: center;
+	font-family: Roboto Condensed; /* подобрать шрифт*/
+	font-size: 25px;
 }
 
 
-#result, #ourMathematics {
+#lineForNumber, #ourMathematics {
 	width: 100%;
 	border: none;
 	background-color: rgb(25, 25, 25);
 	text-align: right;
 	color: white;
-	font-family: times;
+	font-family: Roboto Condensed; /* подобрать шрифт*/
+
 	cursor: none;
 
 }
-#showNumber,#ourMathematics{
+#ourMathematics{
 	margin-top: 3px;
+	height: 28px;
+	font-size: 24px;
 }
 
-#result{
+#lineForNumber{
 	margin-bottom: 10px;
-	height: 30px;
-	font-size: 18px;
+	height: 45px;
+	font-size: 30px;
 	
 }
 .number{
 	background-color: rgb(40, 40, 39);
 }
 
-.operation, .CE, .memoryAdd, .memory-, .equal, .sqrt{
+.operation, .operation+input, #sqrt{
 	background-color: rgb(52, 52, 51);
-	
 }
-.number, .point, .zero, .operation, .CE, .memoryAdd, .memory-, .equal, .sqrt{
-	width: 35px;
-	height:28px;
+div.line input{
+	width: 43px;
+	height:55px;
 	margin-top: 3px;
 	color: rgb(255, 255, 255);
 	border: none;
+	font-size:17px;
 }
 .line{
-	margin-left: 4px;
+	margin-left: 5px;
+	
+}
+.line input:hover {  /* анимация при наведении */
+	-webkit-animation: blink 0.5s infinite alternate;
+	animation: blink 0.5s infinite alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes blink {
+	from {background-color:rgb(77, 77, 184)}
+	to {background-color: rgb(79, 155, 255)}
+}
+
+/* Standard syntax */
+@keyframes blink {
+	from {background-color: rgb(77, 77, 184)}
+	to {background-color: rgb(206, 27, 255)}
+}
+
+.line input:active {
+     border-radius: 45px;
+	-webkit-animation-name: doAnimate;
+	animation-name: doAnimate;
+
+
+}
+
+@keyframes show {
+	from{background-color: rgb(77, 77, 184); opacity: 0.0 }
+	to{background-color: rgb(25, 25, 25); opacity: 1.0}
+}
+@-webkit-keyframes show {
+	from {
+		background-color: rgb(77, 77, 184);
+		opacity: 0.0
+	}
+	to {
+		background-color: rgb(25, 25, 25);
+		opacity: 1.0
+	}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes doAnimate {
+
+	from{background-color: rgb(77, 77, 184); opacity: 0.3}
+	to{background-color: rgb(79, 155, 255); opacity: 0.3}
+}
+/* Standard syntax */
+@keyframes doAnimate{
+	from{background-color: rgb(77, 77, 184); opacity: 0.3}
+	to{background-color: rgb(79, 155, 255); opacity: 1.0}
 	
 }
 
-/* Style for JQ */
-.click{
-    background-color: rgb(77, 77, 184);
+
+
+
+
+#button{
+width: 20%;
+height: 5em;
+margin-right: 40% ;
+margin-left: 40% ;
+margin-top: 100px;
+border-radius: 10px;
+text-align: center;
+border: 2px solid black;
+background-color: rgb(25, 25, 25);
+font-size: 25px;
+color: white;
 }
+.hide{
+display: none;
+}
+
+
+
+/* // анимация к кальку трансформ */
 
 
 
